@@ -1,0 +1,18 @@
+#For pressing any key
+
+def pressKey(key):
+    if key == 'space':
+        keyboard.press(Key.space)
+        keyboard.release(Key.space)
+    elif key == 'tab':
+        keyboard.press(Key.tab)
+        keyboard.release(Key.tab)
+    elif key == 'enter':
+        keyboard.press(Key.enter)
+        keyboard.release(Key.enter)
+        
+ #For pressing a key with shift
+ 
+ with keyboard.pressed(Key.shift):
+    keyboard.press('a')
+    keyboard.release('a')
